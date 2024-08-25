@@ -340,7 +340,7 @@ def addSpiceProperty(sx, dsym: DiagramSymbol):
     elif (symbol.name == "INDUCTOR" or symbol.name == "L_Ferrite" or symbol.name == "L_Iron" or symbol.name == "L_Iron_Small"
           or symbol.name == "L_Small" or symbol.name == "L_Trim"):
         parameterValue1 = random.randint(1, 1000)  # 设置电感值，之后可以随机生成
-        sexprText1 = "\"" + str(parameterValue1) + "μH" + "\""
+        sexprText1 = "\"" + str(parameterValue1) + "uH" + "\""
         parameterValue2 = random.randint(10,100)
         sexprText2 = "\"" + str(parameterValue2) + "mH" + "\""
         selected_string = random.choice([sexprText1, sexprText2])
